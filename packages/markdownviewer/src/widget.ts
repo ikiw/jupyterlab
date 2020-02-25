@@ -95,7 +95,7 @@ export class MarkdownViewer extends Widget {
     const { style } = this.renderer.node;
     switch (option) {
       case 'fontFamily':
-        style.setProperty(option, value as string | null);
+        style.setProperty("font-family", value as string | null);
         break;
       case 'fontSize':
         style.setProperty(option, value ? value + 'px' : null);
